@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome CDN linkfor icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Steven</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#sec-1">Animation</a>
+            <a href="#notifications">Notifications</a>
+            <a href="#card-slider">Card Slider</a>
+            <a href="#typing">Text Typing</a>
+            <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Steven Cabezas</h1>
+            <h3>Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellendus expedita! Rerum dolorem, delectus, neque iste dicta eligendi deserunt odio nobis at cumque, architecto magnam quidem ipsum?</p>
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+
+        <span class="home-imgHover">
+            
+        </span>
+    </section>
+
+    <section id="sec-1" class="sec-1 show-animate second-sec">
+        <h1 class="animate">About</h1>
+        <p class="animate">Animation On Scroll</p>
+    </section>
+
+    <section class="sec-2 second-sec">
+        <h1 class="animate">Services</h1>
+        <p class="animate">Animation On Scroll</p>
+    </section>
+
+    <section class="sec-3 second-sec">
+        <h1 class="animate">Portfolio</h1>
+        <p class="animate">Animation On Scroll</p>
+    </section>
+
+    <section class="sec-4 second-sec">
+        <h1>Contact<span class="showRight-animate" style="--i:1;"></span></h1>
+        <p>Animation On Scroll<span class="showRight-animate" style="--i:3;"></span></p>
+    </section>
+
+    <section class="sec-5 second-sec">
+        <div class="images">
+            <img src="img4.jpg" alt="" class="animate" style="--i:0;">
+            <img src="img5.jpg" alt="" class="animate" style="--i:1;">
+            <img src="img6.jpg" alt="" class="animate" style="--i:2;">
+        </div>
+    </section>
+    
+    <section id="notifications" class="notifications-section">
+        <ul class="notifications"></ul>
+        <div class="buttons">
+            <button class="btn" id="success">Success</button>
+            <button class="btn" id="error">Error</button>
+            <button class="btn" id="warning">warning</button>
+            <button class="btn" id="info">Info</button>
+        </div>
+    </section>
+
+    <section id="card-slider" class="card-slider">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img">
+                        <img src="img-1.jpg" alt="img" draggable="false">  
+                    </div>
+                    <h2>Blanche Pearson</h2>
+                    <span>Sales Manager</span>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="img-2.jpg" alt="img" draggable="false">
+                    </div>
+                    <h2>John Deer</h2>
+                    <span>Sales Manager</span>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="img-3.jpg" alt="img" draggable="false">
+                    </div>
+                    <h2>Emily Smit</h2>
+                    <span>Online Teache</span>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="img-4.jpg" alt="img" draggable="false">
+                    </div>
+                    <h2>James Hanks</h2>
+                    <span>Freelancer</span>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="img-5.jpg" alt="img" draggable="false">
+                    </div>
+                    <h2>Kristina Zasiadko</h2>
+                    <span>Bank Manager</span>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="img-6.jpg" alt="img" draggable="false">
+                    </div>
+                    <h2>Donald Horton</h2>
+                    <span>App Designer</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <section id="typing" class="text-type">
+        <h1>CSS animations are <span></span></h1>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
